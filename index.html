@@ -11,7 +11,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(248, 32%, 49%); }
   </style>
 
   <link rel="stylesheet" href="style.css">
@@ -33,13 +33,25 @@
     </div>
 
     <div id="form">
-      <input type="text" name="first-name" id="first-name" placeholder="First Name">
+      <div class="input-container">
+        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+        <img  class="err-icon" src="./images/icon-error.svg" alt="error icon">
+      </div>
       <div class="error">First Name cannot be empty</div>
-      <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+      <div class="input-container">
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+        <img class="err-icon" src="./images/icon-error.svg" alt="error icon">
+      </div>
       <div class="error">Last Name cannot be empty</div>
-      <input type="email" name="email" id="email" placeholder="Email Address">
+      <div class="input-container">
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <img class="err-icon" src="./images/icon-error.svg" alt="error icon">
+      </div>
       <div class="error">Looks like this is not an email</div>
-      <input type="password" name="pass" id="pass" placeholder="Password">
+      <div class="input-container">
+        <input type="password" name="pass" id="pass" placeholder="Password">
+        <img class="err-icon" src="./images/icon-error.svg" alt="error icon">
+      </div>
       <div class="error">Password cannot be empty</div>
       <button id="btn">Claim your free trial</button>
       <p>By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span></p>
@@ -49,11 +61,14 @@
 
 </main>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<footer>
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>
+    Coded by <a href="https://github.com/iulian-cenusa"> Iulian Cenuşă</a></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
 </html>
